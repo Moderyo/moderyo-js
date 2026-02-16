@@ -1,0 +1,87 @@
+{
+  "name": "@moderyo/sdk",
+  "version": "2.0.7",
+  "description": "Official TypeScript/Node.js SDK for Moderyo Content Moderation API",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./express": {
+      "import": "./dist/integrations/express.mjs",
+      "require": "./dist/integrations/express.js",
+      "types": "./dist/integrations/express.d.ts"
+    },
+    "./fastify": {
+      "import": "./dist/integrations/fastify.mjs",
+      "require": "./dist/integrations/fastify.js",
+      "types": "./dist/integrations/fastify.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "moderyo",
+    "moderation",
+    "content-moderation",
+    "ai",
+    "safety",
+    "trust-safety",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Moderyo Team <team@moderyo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moderyo/moderyo-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moderyo/moderyo-js/issues"
+  },
+  "homepage": "https://docs.moderyo.com/sdk/typescript",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "eslint": "^8.55.0",
+    "fastify": "^5.7.4",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.1.0"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0",
+    "fastify": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    },
+    "fastify": {
+      "optional": true
+    }
+  }
+}
