@@ -209,7 +209,7 @@ const scores: CategoryScores = result.scores;
 
 ```bash
 # Clone repository
-git clone https://github.com/moderyo/moderyo-js.git
+git clone https://github.com/Moderyo/moderyo-js.git
 cd moderyo-js
 
 # Install dependencies
@@ -230,7 +230,14 @@ npm run typecheck
 
 ## Examples
 
-See the [playground-examples](https://github.com/moderyo/playground-examples/tree/main/nodejs) repository for a complete working Express server example.
+See the [playground-examples](https://github.com/Moderyo/playground-examples/tree/main/nodejs) repository for a complete working Express server example.
+
+## Links
+
+- **npm:** [npmjs.com/package/@moderyo/sdk](https://www.npmjs.com/package/@moderyo/sdk)
+- **Documentation:** [docs.moderyo.com/sdk/typescript](https://docs.moderyo.com/sdk/typescript)
+- **GitHub:** [github.com/Moderyo/moderyo-js](https://github.com/Moderyo/moderyo-js)
+- **Website:** [moderyo.com](https://moderyo.com)
 
 ## License
 
